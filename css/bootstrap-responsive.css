@@ -1,0 +1,42 @@
+@media all and (min-width: 769px) {
+    .skills-cont {
+        transform: translateX(-50%);
+        position: relative;
+        width: 50%;
+        left: 50%;
+    }
+    
+    .without-padding {
+	padding: 0;
+    }
+    
+    #menu-wide{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    #about article p {
+        padding-right: 0;
+        text-align: justify;
+    }
+    
+    #contact .contact-data {
+    text-align: center;
+    width: 100%;
+    float: left;
+    }
+    
+    #contact .contact-data address {
+        margin: 0;
+    }
+    
+    .social-media {
+	    margin-top: 20px;
+    }
+ 
+    #about figure img {
+    width: 45%;
+    }
+}

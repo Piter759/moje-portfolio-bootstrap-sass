@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+/* klasa pomocnicza */
+.clear {
+    clear: both;
+}
+
+.container {
+    margin: 0;
+    
+}
+
+header {
+    position: relative;
+    height: 95vh;
+    background-image: url('../img/header-background.jpg');
+    background-size: cover;
+}
+
+#main-header {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main-header h1 {
+    /*position: relative;*/
+    margin: 0;
+    /*padding: 0;*/
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 120px;
+}
+
+header #main-header h1 span {
+    position: relative;
+    margin-left: 10px;
+    font-weight: 400;
+    color: #1AC056;
+}
+
+header #main-header h2 {
+    /*position: relative;*/
+    margin: 0;
+    font-weight: 100;
+    font-size: 35px;
+}
+
+#main-header h2 {
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+#menu-wide {
+	background-color: #e7e7e7;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    opacity: 0.5;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    font-weight: 600;
+}
+
+/* o mnie */
+
+#about {
+    padding: 30px 20px 50px 20px;
+    box-sizing: border-box;
+    background-color: #F9FCFE;
+    box-shadow: 0 1px 15px #888888;
+}
+
+#about h2 {
+    padding-top: 0;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Lato';
+    font-size: 30px;
+}
+
+#about h2 span {
+    font-weight: 400;
+    color: #1AC056;
+}
+
+#about figure,
+#about article {
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+#about figure {
+    margin: 0;
+    text-align: center;
+}
+
+#about figure img {
+    width: 60%;
+    border-radius: 16px;
+    border: 15px solid white;
+}
+
+#about article p {
+    margin-top: 0;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+}    
+
+#skills {
+    margin-bottom: 50px;
+}
+
+#skills h2 {
+    padding-top: 35px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Lato';
+    font-size: 30px;
+}
+
+#skills h2 span {
+    font-weight: 400;
+    color: #1AC056;
+} 
+
+#skills-desc {
+    text-align: center;
+    display: inline-block;
+    left: auto;
+    right: auto;
+    font-family: 'Lato';
+    font-size: 16px;
+    margin: 20px 100px 0 100px;
+    line-height: 25px;
+    font-weight: 300;
+    
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+#logos {
+    text-align: center;
+    
+}
+
+.disp-inline {
+    margin: 50px 20px 0 20px;
+    display: inline-block;
+}
+
+/*Portfolio*/
+
+#portfolio {
+    text-align: center;
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+
+#ident-header-h2 {
+    margin-bottom: 60px;
+}
+
+#portfolio-items {
+    font-size: 0;
+}
+
+.portfolio-item {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    height: 350px;
+    position: relative;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(42, 61, 79, 0.8);
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask .portfolio-item-mask-border {
+    border: 1px solid #fff;
+    height: 100%;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask .portfolio-item-mask-border .portfolio-item-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Lato';
+}
+
+#portfolio-item-1 {
+    background: url('../img/portfolio1.jpg');
+    background-size: cover;
+}
+
+#portfolio-item-2 {
+    background: url('../img/portfolio2.jpg');
+    background-size: cover;
+}
+
+#portfolio-item-3 {
+    background: url('../img/portfolio4.jpg');
+    background-size: cover;
+}
+
+#contact {
+    background-color: #213B50;
+    color: #FFF;
+    padding: 0 80px 100px;
+    font-family: 'Lato';
+}
+
+#contact .contact-data {
+    width: 50%;
+    float: left;
+}
+
+#contact .contact-data h2 {
+    /*text-align: left;*/
+    font-size: 38px;
+}
+
+#contact .contact-data h2 span {
+    color: #1AC056;
+}
+
+#contact .contact-data address {
+    line-height: 25px;
+    font-style: normal;
+    margin: 72px 0;
+}
+
+#contact .contact-data address a {
+    color: #1AC056;
+}
+
+#contact .contact-data .social-media a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    text-align: center;
+    line-height: 38px;
+    margin: 5px 5px;
+}
+
+#contact .contact-data .social-media a:hover {
+    color: #213B50;
+    border: 1px solid #213B50;
+    background-color: #FFF;
+}
+
+#contact .contact-form {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+}
+
+#form-kontakt {
+    width: 100%;
+}
+
+#contact .contact-form form input,
+#contact .contact-form form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #2B4A64;
+    border: 0;
+    color: #FFF;
+    box-sizing: border-box;
+}
+
+#contact .contact-form form input:focus,
+#contact .contact-form form textarea:focus {
+    background-color: #426684;
+}
+
+#contact .contact-form form input[type="submit"] {
+    background-color: #1AC056;
+    float: right;
+    width: auto;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-weight: 600;
+    border: 1px solid #1AC056;
+}
+
+#contact .contact-form form input[type="submit"]:hover {
+    background-color: #FFF;
+    color: #1AC056;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    background-color: #142634;
+}
+
+footer p {
+    font-family: 'Lato';
+    font-size: 15px;
+    padding: 5px 0;
+    margin: 0 0 0 80px;    
+    color: #FFF;
+    font-weight: 400;
+}

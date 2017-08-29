@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    width: 100%;
+    .container {
+        margin: 0;
+    }
+    #menu-wide {
+	background-color: #e7e7e7;
+    }
+    header {
+        position: relative;
+        background-image: url('../img/header-background.jpg');
+        height: 95vh;
+        background-size: cover;
+        #main-header {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+             h1 {
+                margin: 0;
+                color: #fff;
+                font-family: 'Roboto';
+                font-weight: 200;
+                font-size: 120px;
+                span {
+                    position: relative;
+                    margin-left: 10px;
+                    font-weight: 400;
+                    color: #1AC056;
+                }
+            }
+            h2 {
+                color: #fff;
+                font-family: 'Roboto';
+                margin: 0;
+                font-weight: 100;
+                font-size: 35px;
+            }
+        }
+    }
+    .navbar-default {
+	    background-color: transparent;
+        border: transparent;
+        opacity: 0.5;
+    }
+    .navbar-default {
+	    .navbar-nav {
+            li {
+                a {
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    #about {
+        padding: 30px 20px 50px 20px;
+        box-sizing: border-box;
+        background-color: #F9FCFE;
+        box-shadow: 0 1px 15px #888888;
+        h2 {
+            padding-top: 0;
+            text-align: center;
+            font-weight: 300;
+            font-family: 'Lato';
+            font-size: 30px;
+            .span {
+                font-weight: 400;
+                color: #1AC056;
+            }
+        }
+        figure, article {
+            display: inline-block;
+            width: 100%;
+            float: left;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+            img {
+                width: 60%;
+                border-radius: 16px;
+                border: 15px solid white;
+            }
+        }
+        article {
+           p {
+                margin-top: 0;
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 25px;
+            }     
+        } 
+    }
+    #skills {
+        margin-bottom: 50px;
+        h2 {
+            padding-top: 35px;
+            text-align: center;
+            font-weight: 300;
+            font-family: 'Lato';
+            font-size: 30px;
+            span {
+                font-weight: 400;
+                color: #1AC056;
+            } 
+        }
+        #skills-desc {
+            text-align: center;
+            display: inline-block;
+            left: auto;
+            right: auto;
+            font-family: 'Lato';
+            font-size: 16px;
+            margin: 20px 100px 0 100px;
+            line-height: 25px;
+            font-weight: 300;
+        }
+        #logos {
+            text-align: center;
+            .disp-inline {
+                margin: 50px 20px 0 20px;
+                display: inline-block;
+                figcaption {
+                    text-align: center;
+                    margin-top: 20px;
+                    font-family: 'Lato';
+                    font-weight: 300;
+                }
+            }  
+        }
+    }
+    #portfolio {
+        text-align: center;
+        padding: 0 80px;
+        margin-bottom: 100px;
+        #ident-header-h2 {
+            padding-top: 35px;
+            text-align: center;
+            font-weight: 300;
+            font-family: 'Lato';
+            font-size: 30px;
+            margin-bottom: 60px;
+            .span {
+                font-weight: 400;
+                color: #1AC056;
+            }
+        }
+        #portfolio-items {
+            font-size: 0;
+        }
+        #portfolio-item-1 {
+            background: url('../img/portfolio1.jpg');
+            background-size: cover;
+        }
+        #portfolio-item-2 {
+            background: url('../img/portfolio2.jpg');
+            background-size: cover;
+        }
+        #portfolio-item-3 {
+            background: url('../img/portfolio4.jpg');
+            background-size: cover;
+        }
+        .portfolio-item {
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            height: 350px;
+            position: relative;
+            .portfolio-item-mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(42, 61, 79, 0.8);
+                opacity: 0;
+                transition: all 0.5s;
+                padding: 10px;
+                box-sizing: border-box;
+                .portfolio-item-mask-border {
+                    border: 1px solid #fff;
+                    height: 100%;
+                    .portfolio-item-content {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 20px;
+                        color: #fff;
+                        font-family: 'Lato';
+                    }
+                }
+            }
+            .portfolio-item-mask:hover {
+                opacity: 1;
+            }
+        }
+
+    }
+    #contact {
+        background-color: #213B50;
+        color: #FFF;
+        padding: 0 80px 100px;
+        font-family: 'Lato';
+        .contact-data {
+            width: 50%;
+            float: left;
+            h2 {
+                font-size: 38px;
+                span {
+                    color: #1AC056;
+                }
+            }
+            address {
+                line-height: 25px;
+                font-style: normal;
+                margin: 72px 0;
+                a {
+                    color: #1AC056;
+                }
+            }
+            .social-media {
+                a {
+                    display: inline-block;
+                    width: 38px;
+                    height: 38px;
+                    color: #FFF;
+                    border: 1px solid #FFF;
+                    text-align: center;
+                    line-height: 38px;
+                    margin: 5px 5px;
+                }
+                a:hover {
+                    color: #213B50;
+                    border: 1px solid #213B50;
+                    background-color: #FFF;
+                }
+
+            }
+            address {
+                font-style: normal;
+            }
+        }
+        .contact-form {
+            width: 100%;
+            float: left;
+            margin-top: 100px;
+            #form-kontakt {
+                width: 100%;
+            }
+            form {
+                input, textarea {
+                width: 100%;
+                padding: 15px;
+                margin-bottom: 15px;
+                background-color: #2B4A64;
+                border: 0;
+                color: #FFF;
+                box-sizing: border-box;
+                }
+                input:focus {
+                    background-color: #426684;
+                }
+                textarea:focus {
+                    background-color: #426684;
+                }
+                input[type="submit"] {
+                    background-color: #1AC056;
+                    float: right;
+                    width: auto;
+                    text-transform: uppercase;
+                    padding: 15px 30px;
+                    font-weight: 600;
+                    border: 1px solid #1AC056;
+                }
+                input[type="submit"]:hover {
+                    background-color: #FFF;
+                    color: #1AC056;
+                }
+            } 
+        }
+    }
+    footer {
+        background-color: #142634;
+        p {
+            font-family: 'Lato';
+            font-size: 15px;
+            padding: 5px 0;
+            margin: 0 0 0 80px;    
+            color: #FFF;
+            font-weight: 400;
+        }
+    }
+}
+.clear {
+    clear: both;
+}
